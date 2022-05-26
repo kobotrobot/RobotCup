@@ -64,13 +64,13 @@ while True:
             cx, cy, radius = i
             cv2.circle(frame, (cx, cy), radius, (0, 0, 255), 5)
 
-    circles4 = cv2.HoughCircles(roi4, cv2.HOUGH_GRADIENT, 1, 20, param1=250, param2=30, minRadius=80, maxRadius=150)
-    if circles4 is not None:
-        for i in circles4[0]:
-            print(4)
-            i = i.astype(int)
-            cx, cy, radius = i
-            cv2.circle(frame, (cx, cy), radius, (0, 0, 255), 5)
+    # circles4 = cv2.HoughCircles(roi4, cv2.HOUGH_GRADIENT, 1, 20, param1=250, param2=30, minRadius=80, maxRadius=150)
+    # if circles4 is not None:
+    #     for i in circles4[0]:
+    #         print(4)
+    #         i = i.astype(int)
+    #         cx, cy, radius = i
+    #         cv2.circle(frame, (cx, cy), radius, (0, 0, 255), 5)
 
     # if circles1
     # dst_result = cv2.bitwise_and(frame, frame, mask=dst1)
